@@ -1,0 +1,47 @@
+:root {
+  --vp-c-brand-1: #e20042;
+  --vp-c-brand-2: #fb004b;
+  --vp-c-brand-3: #ec0047;
+  --vp-c-brand-soft: #ee0047;
+  --vp-c-black: #50585d;
+  --vp-home-hero-image-background-image: transparent;
+  --vp-font-family-base: Source Sans Pro;
+
+  /* Images are too small so we need to increase margins.
+  The layout width is the sidebar+content+aside and the default
+  is 1440. As a consequence we end up with 784px (obtained from inspector)
+  of usable space for the text and images 
+  
+  In the old learning, the usable space is 960px. To achieve this,
+  we need to add 176 (=960-784) to 1440. This adds up to 1616, so 
+  we round it up to 1620 (leaving 964px as usable space).
+  
+  We need to change the max width of the document to this new size (964px)
+  so that it can expand.
+
+  We also need to alter the media query rules so that they change to the 
+  "max size" format only when this max-width is reached (instead of 1440).
+  */
+  --vp-layout-max-width: 1620px;
+}
+
+@font-face {
+  font-family: Source Sans Pro;
+  src: url('/SourceSans3-VariableFont_wght.ttf');
+} 
+
+
+.VPHero .text {
+    color: var(--vp-c-brand-1);
+    font-family: Source Sans Pro,Helvetica Neue,Arial,"sans-serif";
+} 
+  
+.VPSidebarItem.is-active .link .text, .VPLink.active {
+  font-weight:600;
+}
+
+.vp-doc img {
+  margin-bottom: 2em;
+}
+
+
