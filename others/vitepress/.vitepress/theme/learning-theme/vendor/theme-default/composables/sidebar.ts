@@ -18,8 +18,8 @@ import {
   getSidebarGroups
 } from '../support/sidebar'
 import { useData } from './data'
-import { SidebarItem } from '../../../../vitepress/.vitepress/theme/schema/sidebar-structure'
-import { isSystem, someCommonGroup, umLoggedin } from '../../../../vitepress/.vitepress/theme/utils/auth'
+import { SidebarItem } from '../../schema/sidebar-structure'
+import { isSystem, someCommonGroup, umLoggedin } from '../../utils/auth'
 
 export interface SidebarControl {
   collapsed: Ref<boolean>

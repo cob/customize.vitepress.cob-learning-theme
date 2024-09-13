@@ -3,7 +3,7 @@ import { computed } from 'vue';
 import VPLink from './../VPLink.vue';
 import { umLoggedin } from '@cob/rest-api-wrapper';
 import { ref, onMounted } from 'vue'
-import { isLoggedOn } from '../../../../../vitepress/.vitepress/theme/utils/auth';
+import { isLoggedOn } from '../../../../../utils/auth';
 
 const isLogged = isLoggedOn()
 
