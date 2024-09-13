@@ -18,8 +18,8 @@ import {
   getSidebarGroups
 } from '../support/sidebar'
 import { useData } from './data'
-import { SidebarItem } from '../../schema/sidebar-structure'
-import { isSystem, someCommonGroup, umLoggedin } from '../../utils/auth'
+import { SidebarItem } from '../../../../schema/sidebar-structure'
+import { isSystem, someCommonGroup, umLoggedin } from '../../../../utils/auth'
 
 export interface SidebarControl {
   collapsed: Ref<boolean>

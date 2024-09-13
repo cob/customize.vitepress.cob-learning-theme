@@ -5,7 +5,7 @@ import { useEditLink } from '../composables/edit-link'
 import { usePrevNext } from '../composables/prev-next'
 import VPLink from './VPLink.vue'
 import VPDocFooterLastUpdated from './VPDocFooterLastUpdated.vue'
-import { hasAccess } from '../../utils/auth'
+import { hasAccess } from '../../../../utils/auth'
 
 const { theme, page, params } = useData()
 
